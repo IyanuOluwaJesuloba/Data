@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.23;
 
 import {Script, console} from "forge-std/Script.sol";
 import {StudentData} from "../src/StudentData.sol";
@@ -12,7 +12,7 @@ contract StudentDataScript is Script {
     function run() public {
         vm.startBroadcast();
 
-        studentData = new StudentData("Alice", 20);
+        studentData = new StudentData("Owoseni Iyanuoluwa", 20);
 
         vm.stopBroadcast();
     }
